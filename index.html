@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Football Quiz Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>⚽ FOOTBALL <span>QUIZ ARENA</span></h2>
+  <button onclick="openProfile()">👤 Player</button>
+</header>
+
+<main>
+  <section class="hero">
+    <p>WELCOME TO THE ARENA</p>
+    <h1>UJI PENGETAHUAN<br><span>SEPAK BOLAMU!</span></h1>
+    <p>Jawab tantangan sepak bola dan jadilah legenda.</p>
+    <button class="play" onclick="startQuiz()">MULAI BERMAIN ↗</button>
+  </section>
+
+  <section class="stats">
+    <div class="card"><small>TOTAL POIN</small><h2 id="points">0</h2></div>
+    <div class="card"><small>LEVEL</small><h2 id="level">1</h2></div>
+    <div class="card"><small>DIMAINKAN</small><h2 id="played">0</h2></div>
+  </section>
+
+  <h2>MASUK KE ARENA</h2>
+
+  <section class="modes">
+    <button onclick="startQuiz()">⚽<b>Main Kuis</b><small>Uji wawasan sepak bola.</small></button>
+    <button onclick="openDuel()">⚔️<b>Duel Teman</b><small>Tantang teman bermain.</small></button>
+    <button onclick="openLeaderboard()">🏆<b>Leaderboard</b><small>Lihat ranking pemain.</small></button>
+    <button onclick="openProfile()">👤<b>Profil Saya</b><small>Atur profil pemain.</small></button>
+  </section>
+
+  <h2>KATEGORI POPULER</h2>
+  <section class="categories">
+    <button onclick="chooseCategory('Pemain')">👟 Pemain</button>
+    <button onclick="chooseCategory('Klub')">🛡️ Klub</button>
+    <button onclick="chooseCategory('Piala Dunia')">🌍 Piala Dunia</button>
+    <button onclick="chooseCategory('Liga Champions')">⭐ UCL</button>
+  </section>
+</main>
+
+<nav>
+  <button onclick="goHome()">⌂<small>Beranda</small></button>
+  <button onclick="startQuiz()">⚽<small>Kuis</small></button>
+  <button onclick="openDuel()">⚔️<small>Duel</small></button>
+  <button onclick="openLeaderboard()">🏆<small>Ranking</small></button>
+  <button onclick="openProfile()">👤<small>Profil</small></button>
+</nav>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+      </html>
+                                                                       
