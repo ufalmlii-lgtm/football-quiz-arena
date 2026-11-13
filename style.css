@@ -1,0 +1,194 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 90px;
+  background: #080d0b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #26352b;
+}
+
+header h2 {
+  font-size: 14px;
+}
+
+header span {
+  color: #a6ff4d;
+}
+
+header button {
+  background: #17251b;
+  color: white;
+  border: 1px solid #344b38;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+main {
+  padding: 15px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1b3520, #101914);
+  border: 1px solid #344b38;
+  border-radius: 18px;
+  padding: 25px 18px;
+  margin: 15px 0;
+}
+
+.hero p:first-child {
+  color: #a6ff4d;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 34px;
+}
+
+.hero h1 span {
+  color: #a6ff4d;
+}
+
+.hero p {
+  color: #a9b6ad;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+.play {
+  background: #a6ff4d;
+  color: #10200c;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-weight: bold;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.card {
+  background: #121c16;
+  border: 1px solid #293b2e;
+  border-radius: 12px;
+  padding: 12px 8px;
+}
+
+.card small {
+  color: #91a096;
+  font-size: 9px;
+}
+
+.card h2 {
+  color: #a6ff4d;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.modes button {
+  background: #121c16;
+  color: white;
+  border: 1px solid #293b2e;
+  border-radius: 12px;
+  padding: 18px 12px;
+  text-align: left;
+  min-height: 120px;
+  font-size: 22px;
+}
+
+.modes b,
+.modes small {
+  display: block;
+}
+
+.modes b {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.modes small {
+  font-size: 11px;
+  color: #91a096;
+  margin-top: 7px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.categories button {
+  background: #142019;
+  border: 1px solid #344b38;
+  color: white;
+  border-radius: 25px;
+  padding: 11px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #101912;
+  border-top: 1px solid #344b38;
+  padding: 12px 3px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #a6ff4d;
+  font-size: 18px;
+}
+
+nav small {
+  display: block;
+  color: white;
+  font-size: 9px;
+  margin-top: 5px;
+}
+
+#toast {
+  display: none;
+  position: fixed;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #a6ff4d;
+  color: #10200c;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
